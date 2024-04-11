@@ -12,6 +12,10 @@
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="wallmart.css">
+    <!--JavaScript-->
+    <script src="wallmart.js">
+
+    </script>
     <title>Athens Organic Store</title>
 </head>
 <body>
@@ -62,42 +66,388 @@
         </div>
       </nav>
 
+      <!-- -->
       <section class="main">
-        <div class="container py-5">
+        <div class="container container-header py-5">
             <div class="row py-5">
                 <div class="col-lg-7 pt-5 text-center">
-                    <h1 class="pt-5">Nature Has Always Cared For Us !</h1>
-                    <button class="btn1 mt-3">More Tips</button>
+                <h1>The Nature Always Cares About You!</h1>
                 </div>
             </div>
         </div>
       </section>
     <!--/////////////////////////////////////////////////////////////////////////-->
 
-    <section class="new">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="row">
+  <!--  <section class="new">
+        <div class="container py-5">
+            <div class="row pt-5">
+                <div class="col-lg-7 m-auto">
+                    <div class="row text-center">
                         <div class="col-lg-4">
-                            <img src="" class="img-luid" alt="">
+                            <img src="bananaedit2.jpg" class="img-luid" alt="">
                             <h6>NATURAL</h6>
                         </div>
                         <div class="col-lg-4">
-                            <img src="" class="img-luid" alt="">
+                            <img src="grapeslogo.png" class="img-luid" alt="">
                             <h6>NATURAL</h6>
                         </div>
                         <div class="col-lg-4">
-                            <img src="" class="img-luid" alt="">
+                            <img src="orange.jpg" class="img-luid" alt="">
                             <h6>NATURAL</h6>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="product">
+    
+    <!--  <div class="container py-5">
+        <h2 class="text-center">Groceries</h2>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+
+          <div class="col">
+            <div class="card">
+              <img src="apple.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Apples</h5>
+                <P class="card-text">Lorem ipsum dolor sit amet consectetur.</P>
+              </div>
+              <div class="d-flex justify-content-around mb-3">
+                <h4>$8.99</h4>
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col">
+            <div class="card">
+              <img src="papaya.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Apples</h5>
+                <P class="card-text">Lorem ipsum dolor sit amet consectetur.</P>
+              </div>
+              <div class="d-flex justify-content-around mb-3">
+                <h4>$8.99</h4>
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col">
+            <div class="card">
+              <img src="kiwi.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Apples</h5>
+                <P class="card-text">Lorem ipsum dolor sit amet consectetur.</P>
+              </div>
+              <div class="d-flex justify-content-around mb-3">
+                <h4>$8.99</h4>
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col">
+            <div class="card">
+              <img src="watermellon.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Apples</h5>
+                <P class="card-text">Lorem ipsum dolor sit amet consectetur.</P>
+              </div>
+              <div class="d-flex justify-content-around mb-3">
+                <h4>$8.99</h4>
+                <button class="btn btn-primary">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> -->
+
+      <div class="container">
+        <h1 class="text-center mb-4" style="color: #4CAF50;">Organic Food List</h1>
+
+        <!-- Fruits Category -->
+        <div class="category-container">
+            <h2 class="category-title">Fruits</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 fruits py-2">
+                <!-- Product Cards for Fruits -->
+                <div class="col">
+                    <div class="product-card">
+                        <img src="tomato.jpg" alt="Organic Tomatoes" class="product-img">
+                        <div class="product-name">Organic Tomatoes</div>
+                        <div class="product-price">$1.99 per lb</div>
+                        <p>Plump and juicy organic tomatoes.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Tomatoes', 1.99)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="kiwi.jpg" alt="Organic Kiwi" class="product-img">
+                        <div class="product-name">Organic Kiwi</div>
+                        <div class="product-price">$1 each</div>
+                        <p>Plump and juicy organic Kiwi.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Kiwi', 1)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="blue.jpg" alt="Organic Blueberries" class="product-img">
+                        <div class="product-name">Organic Blueberries</div>
+                        <div class="product-price">$4.99 per pint</div>
+                        <p>Sweet and antioxidant-rich organic blueberries.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Blueberries', 4.99)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="apple.jpg" alt="Organic Apples" class="product-img">
+                        <div class="product-name">Organic Apples</div>
+                        <div class="product-price">$0.99 each</div>
+                        <p>Delicious organic apples picked at peak ripeness.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Apples', 0.99)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="figues.jpg" alt="Organic Figs" class="product-img">
+                        <div class="product-name">Organic Figs</div>
+                        <div class="product-price">$3 per pint</div>
+                        <p>Fresh, ripe organic figs, a sweet and flavorful treat.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Figs', 3)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="water.jpg" alt="Organic Watermelon" class="product-img">
+                        <div class="product-name">Organic Watermelon</div>
+                        <div class="product-price">$3.50 per pint</div>
+                        <p>Juicy organic watermelon bursting with refreshing sweetness.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Watermelon', 3.50)">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vegetables Category -->
+        <div class="category-container py-4">
+            <h2 class="category-title">Vegetables</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 vegetables py-2">
+                <!-- Product Cards for Vegetables -->
+                <div class="col">
+                    <div class="product-card">
+                        <img src="carrots.jpg" alt="Organic Carrots" class="product-img">
+                        <div class="product-name">Organic Carrots</div>
+                        <div class="product-price">$0.99 per lb</div>
+                        <p>Sweet and crunchy organic carrots.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Carrots', 0.99)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="spinach.jpg" alt="Organic Spinach" class="product-img">
+                        <div class="product-name">Organic Spinach</div>
+                        <div class="product-price">$2.49 per bunch</div>
+                        <p>Tender organic spinach leaves, perfect for salads.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Spinach', 2.49)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="kale.jpg" alt="Organic Kale" class="product-img">
+                        <div class="product-name">Organic Kale</div>
+                        <div class="product-price">$1.79 per bunch</div>
+                        <p>Certified organic onions bursting with natural flavor and goodness.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Kale', 1.79)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="avocado.jpg" alt="Organic Avocado" class="product-img">
+                        <div class="product-name">Organic Avocado</div>
+                        <div class="product-price">$2.99 each</div>
+                        <p>Creamy organic avocados, great for guacamole.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Avocado', 2.99)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="bet.jpg" alt="Organic Beetroot" class="product-img">
+                        <div class="product-name">Organic Beetroot</div>
+                        <div class="product-price">$2 per lb</div>
+                        <p>Vibrant organic beetroot, packed with earthy sweetness and nutritional benefits.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Beetroot', 2)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="bro.jpg" alt="Organic Broccoli" class="product-img">
+                        <div class="product-name">Organic Broccoli</div>
+                        <div class="product-price">$0.75 each</div>
+                        <p>Nutrient-rich organic broccoli, with a crisp texture and delicious flavor.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Broccoli', 0.75)">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Category -->
+        <div class="category-container">
+            <h2 class="category-title">Other</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4 other">
+                <!-- Product Cards for Other Category -->
+                <div class="col">
+                    <div class="product-card">
+                        <img src="quiona.jpg" alt="Organic Quinoa" class="product-img">
+                        <div class="product-name">Organic Quinoa</div>
+                        <div class="product-price">$5.99 per lb</div>
+                        <p>Nutrient-rich organic quinoa grains.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Quinoa', 5.99)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="almond.jpg" alt="Organic Almonds" class="product-img">
+                        <div class="product-name">Organic Almonds</div>
+                        <div class="product-price">$7.99 per lb</div>
+                        <p>Organic almonds, a healthy and delicious snack.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Almonds', 7.99)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="salmon.jpg" alt="Organic Salmon" class="product-img">
+                        <div class="product-name">Organic Salmon</div>
+                        <div class="product-price">$14.99 per lb</div>
+                        <p>Fresh wild-caught organic salmon fillet.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Salmon', 14.99)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="oil.jpg" alt="Organic Olive Oil" class="product-img">
+                        <div class="product-name">Organic Olive Oil</div>
+                        <div class="product-price">$1.20 per lb</div>
+                        <p>Pure organic oil, ideal for cooking and enhancing your favorite dishes.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Olive Oil', 1.20)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="eggs.jpg" alt="Organic Eggs" class="product-img">
+                        <div class="product-name">Organic Eggs</div>
+                        <div class="product-price">$4 per lb</div>
+                        <p>Farm-fresh organic eggs, rich in flavor and nutrients.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Eggs', 4)">Buy</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="honey.jpg" alt="Organic Honey" class="product-img">
+                        <div class="product-name">Organic Honey</div>
+                        <div class="product-price">$3.50 per lb</div>
+                        <p>Golden organic honey, naturally sweet and delicious.</p>
+                        <button class="btn buy-btn" onclick="showQuantity('Honey', 3.50)">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quantity Modal -->
+        <div class="modal fade" id="quantityModal" tabindex="-1" role="dialog" aria-labelledby="quantityModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="quantityModalLabel">Select Quantity</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                            onclick="closeQuantityModal()">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="quantityInput">Quantity:</label>
+                            <input type="number" class="form-control quantity-input" id="quantityInput" value="1"
+                                oninput="updateTotalPrice()">
+                        </div>
+                        <div id="totalPrice" class="total-price">Total Price: $1.99</div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            onclick="closeQuantityModal()">Close</button>
+                        <button type="button" class="btn btn-primary" onclick="calculateTotal()">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js">
+
+
+
+    </script>
+<script>
+  function showQuantity(productName, pricePerUnit) {
+      // Find the product card corresponding to the clicked "Buy" button
+      const productCard = event.target.closest('.product-card');
+      if (!productCard) return;
+
+      // Retrieve product price from the clicked product card
+      const priceElement = productCard.querySelector('.product-price');
+      if (!priceElement) return;
+
+      // Extract the numeric price value
+      const priceText = priceElement.innerText.trim().replace('$', '');
+      const productPrice = parseFloat(priceText);
+
+      // Update modal with product details
+      document.getElementById('quantityModalLabel').innerText = 'Select Quantity - ' + productName;
+      document.getElementById('quantityInput').value = 1; // Reset quantity input to 1
+
+      // Update total price initially based on the product's price and quantity
+      updateTotalPrice(productPrice, 1);
+
+      // Show the quantity modal
+      $('#quantityModal').modal('show');
+  }
+
+  function updateTotalPrice(pricePerUnit, quantity) {
+      const totalPrice = quantity * pricePerUnit;
+      document.getElementById('totalPrice').innerText = 'Total Price: $' + totalPrice.toFixed(2);
+  }
+
+  function calculateTotal() {
+      const quantity = parseInt(document.getElementById('quantityInput').value);
+
+      // Retrieve product price from the modal label
+      const modalLabel = document.getElementById('quantityModalLabel').innerText;
+      const productPrice = parseFloat(modalLabel.split('$')[1].trim());
+
+      const totalPrice = quantity * productPrice;
+      alert('Added ' + quantity + ' item(s) to cart. Total Price: $' + totalPrice.toFixed(2));
+      $('#quantityModal').modal('hide');
+  }
+
+  function closeQuantityModal() {
+      $('#quantityModal').modal('hide');
+  }
+</script>
 
 </body>
 </html>
