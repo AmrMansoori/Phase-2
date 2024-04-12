@@ -1,93 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&family=Oswald:wght@200..700&family=Prata&family=Protest+Revolution&family=Protest+Riot&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Form</title>
 
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f3ea; /* Set a background color for the body */
+}
 
-    .contact-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-image: url('healthy.jpg');
-      background-size: cover;
-      background-position: left;
-    }
+/* Navbar styling */
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
 
-    .contact-form {
-      background-color: transparent;
-      padding: 30px;
-      border-radius: 10px;
-      color: #000;
-      max-width: 400px; 
-      width: 100%;
-      box-sizing: border-box; 
-    }
+.navbar-brand {
+  font-size: 2rem;
+  color: black;
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+}
 
-    .form-group {
-      margin-bottom: 20px;
-    }
+.navbar-brand:hover {
+  color: black;
+}
 
-    input[type="text"],
-    input[type="email"],
-    textarea {
-      width: 100%;
-      padding: 12px;
-      border: 2px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      resize: vertical;
-    }
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  align-items: center; /* Center vertically within the navbar */
+}
 
-    label {
-      font-weight: bold;
-    }
+.nav-link {
+  margin-right: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Rubik', sans-serif;
+  text-decoration: none;
+}
 
-    button[type="submit"] {
-      width: 100%;
-      padding: 12px;
-      background-color: #090c09;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+.nav-link:hover {
+  color: black;
+}
 
-    button[type="submit"]:hover {
-      background-color: #285b24;
-    }
+/* Search container styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Add margin to separate search bar from buttons */
+}
 
-    /* Banner styles */
-    .banner {
-      background-color: rgb(255, 254, 251);
-      text-align: right;
-      padding: 10px 0;
-      background-image: url("banner.jpg");
-    }
+.search {
+  height: 40px;
+  width: 300px;
+  border-radius: 60px;
+  outline: none;
+  border: 2px solid rgba(248, 26, 92);
+  padding: 0 20px;
+  font-family: 'Rubik', sans-serif;
+}
 
-    .banner-button {
-      color: #000;
-      padding: 10px 20px;
-      text-decoration: none;
-      margin: 0 10px;
-      border-radius: 5px;
-    }
+.btn0 {
+  height: 40px;
+  width: 100px;
+  outline: none;
+  border: none;
+  background: rgba(248, 26, 92);
+  color: white;
+  border-radius: 60px;
+  font-weight: 700;
+  cursor: pointer;
+}
 
-    .banner-button:hover {
-      background-color: orange;
-    }
+/* Contact form section styling */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('healthy.jpg');
+  background-size: cover;
+  background-position: left;
+}
+
+.contact-form {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  color: #000;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+}
+
+label {
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #090c09;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
   </style>
 </head>
 <body>
+
+  <nav class="navbar navbar-expand-lg custm-navbar-bg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Organic</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bootcontactform.html">TRENDING</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">STORE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Organic.html">ORGANIC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">CONTACT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <!--
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Years
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">2000</a></li>
+              <li><a class="dropdown-item" href="#">2010</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>-->
+        </ul>
+        <form class="d-flex" role="search">
+         <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+          <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+        
+         <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+          <button class="btn0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
 <section class="contact-section">
   <div class="contact-container">
