@@ -51,59 +51,35 @@
           </div>
         </div>
       </nav>
-
     <!--Checkout Container-->
     <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-8">
-                <h2 class="mb-4">Organic Checkout</h2>
-                <div class="product-review">
-                    <h3>Your Cart</h3>
-                    <div id="productItems" class="walmart-items">
-                        <!-- Example of a cart item -->
-                        <div class="cart-item d-flex justify-content-between align-items-center mb-3">
-                            <div class="item-image mr-3">
-                                <img src="#" alt="Item Name" style="width: 60px; height: 60px;">
-                            </div>
-                            <div class="item-details flex-grow-1">
-                                <h5 class="item-title">Example Product</h5>
-                                <p class="item-info">Size: M, Color: Blue</p>
-                                <div class="d-flex justify-content-start align-items-center">
-                                    <span class="item-price mr-3">$59.99</span>
-                                    <input type="number" value="1" min="1" class="form-control quantity-input" style="width: 60px;">
-                                </div>
-                            </div>
-                            <button class="remove-item btn btn-danger">Remove</button>
-                        </div>
-                        <!-- Additional cart items here -->
-                    </div>
-                </div>
-                
-                <!-- Price Summary -->
-                <div class="price-summary walmart-summary mb-4">
-                    <h3>Price Summary</h3>
-                    <p>Subtotal: <span id="subtotal">$0.00</span></p>
-                    <p>Taxes: <span id="taxes">$0.00</span></p>
-                    <p>Total: <span id="total">$0.00</span></p>
-                </div>
-                <!-- Promo Code -->
-                <div class="promo-code mb-4">
-                    <h3>Have a Promo Code?</h3>
-                    <input type="text" id="promoCode" placeholder="Promo Code">
-                    <button id="applyPromoCode" class="btn btn-primary">Apply</button>
-                </div>
-                <!-- Shipping Information -->
-                <div class="shipping-info walmart-shipping mb-4">
-                    <h3>Shipping Information</h3>
-                    <input type="text" id="name" placeholder="Full Name" class="form-control mb-2">
-                    <input type="text" id="address" placeholder="Address" class="form-control mb-2">
-                </div>
-                <!-- Place Order Button -->
-                <button id="placeOrder" class="btn btn-success btn-lg btn-block">Place Your Order</button>
-            </div>
-        </div>
-    </div>
-    
+      <!-- Dynamic Item Addition -->
+      <button id="addItem" class="btn btn-primary mb-3">Add Item</button>
+      <div class="row">
+          <div class="col-lg-8">
+              <h2 class="mb-4">Organic Checkout</h2>
+              <!-- Product Review -->
+              <div id="productItems" class="walmart-items">
+                  <!-- Items will be dynamically added here -->
+              </div>
+              <!-- Price Summary -->
+              <div class="price-summary walmart-summary mb-4">
+                  <h3>Price Summary</h3>
+                  <p>Subtotal: <span id="subtotal">$0.00</span></p>
+                  <p>Total: <span id="total">$0.00</span></p>
+              </div>
+              <!-- Promo Code -->
+              <div class="promo-code mb-4">
+                  <h3>Have a Promo Code?</h3>
+                  <input type="text" id="promoCode" placeholder="Promo Code" class="form-control mb-2">
+                  <button id="applyPromoCode" class="btn btn-primary">Apply</button>
+              </div>
+              <!-- Place Order Button -->
+              <button id="placeOrder" class="btn btn-success btn-lg btn-block">Place Your Order</button>
+          </div>
+      </div>
+  </div>
+  
     <!-- Bootstrap JS and its dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
