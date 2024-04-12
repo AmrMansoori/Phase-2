@@ -1,0 +1,76 @@
+Phase 1: Scope and Implementation Design
+
+Task 1: Project Proposal
+
+**Team Formation:
+
+Our team consists of four members: Rabii, Qudus, Amer, and Daneilo.
+
+**Topic Selection:
+
+We have chosen to develop a responsive fruits and vegetable website. This website will provide information about various fruits and vegetables, including nutritional facts, recipes, and gardening tips.
+
+**Scope Definition:
+
+- Purpose of the Website: The purpose of our website is to educate visitors about different fruits and vegetables, promote healthy eating habits, and offer resources for gardening enthusiasts.
+  
+- Target Audience: Our target audience includes health-conscious individuals, home cooks, nutrition enthusiasts, and amateur gardeners.
+  
+**Key Features and Functionalities:
+
+  - Informational pages about different fruits and vegetables
+  - Nutritional information and benefits
+  - Contact form for inquiries and feedback
+
+**Specific Requirements for Content or Interactivity:
+
+  - Interactive elements such as sliders or carousels for showcasing featured produce
+  - Search functionality for quick access to specific fruits or vegetables
+  - Mobile responsiveness for seamless viewing across devices
+
+
+
+
+Task 2: Implementation Design
+
+**Design Mockups:
+
+Using Figma, we will create detailed design mockups to visualize our website:
+- Different page layouts (home, organic , contact, About)
+- Consistent color schemes and typography for a cohesive brand identity
+- Clear navigation design for intuitive user experience
+Responsive design to ensure usability on various screen sizes
+
+
+
+!!!!! FIGMA LINK !!!!!! : https://www.figma.com/file/421cssHQVOUJS75nKasTnt/figma.to.website-(Community)?type=design&node-id=0%3A1&mode=design&t=I5es4UNSLpf9xksC-1
+
+
+
+
+
+
+**Bootstrap Utilization Plan:
+
+We will leverage Bootstrap to streamline development:
+- Components such as navbar for navigation, cards for displaying products, and forms for the contact page
+- Customizations to tailor Bootstrap elements to match our design aesthetics and responsiveness
+
+Task 3: Initial Code Setup
+
+**GitHub Repository:
+A GitHub repository will be set up to facilitate collaboration:
+- All team members will have access to the repository for version control and code sharing even the Prof Gab
+
+**Project Structure:
+The basic structure of our website will be implemented using HTML, CSS, JavaScript, and Bootstrap:
+- HTML files for each webpage (home, about,Organic, contact)
+- CSS for styling and layout adjustments
+- JavaScript for interactive elements and form validation
+
+
+**README:
+The README file will provide essential project information:
+- Overview of the project and its objectives
+- Instructions on how to set up and run the project locally
+- Contribution guidelines for team members, including branching and merging protocols
