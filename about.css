@@ -11,34 +11,50 @@ header {
     text-align: center;
     padding: 1px;
 }
+/*Nav - bar*/
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Lobster', cursive;
+}
 
-nav {
-    background-color: #333;
+.navbar-brand:hover{
+    color: black;
+}
+
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid rgba(248,26,92);
+}
+
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background: rgba(248, 26, 92);
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    border-radius: 60px;
+    font-weight: 700;
 }
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-nav ul li a.active {
-    font-weight: bold;
-}
-
+/*Nav - bar*/
 main {
     padding: 20px;
 }

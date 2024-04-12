@@ -42,6 +42,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">CONTACT</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
               <!--
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -384,7 +387,8 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal"
                             onclick="closeQuantityModal()">Close</button>
-                        <button type="button" class="btn btn-primary" onclick="calculateTotal()">Add to Cart</button>
+                        <button type="button" class="btn btn-primary" onclick="calculateTotal()">Calculate yout total befor checkout</button>
+                        <a class="btn btn-primary" href="checkout.html">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -403,51 +407,37 @@
 
     </script>
 <script>
-  function showQuantity(productName, pricePerUnit) {
-      // Find the product card corresponding to the clicked "Buy" button
-      const productCard = event.target.closest('.product-card');
-      if (!productCard) return;
-
-      // Retrieve product price from the clicked product card
-      const priceElement = productCard.querySelector('.product-price');
-      if (!priceElement) return;
-
-      // Extract the numeric price value
-      const priceText = priceElement.innerText.trim().replace('$', '');
-      const productPrice = parseFloat(priceText);
-
-      // Update modal with product details
-      document.getElementById('quantityModalLabel').innerText = 'Select Quantity - ' + productName;
-      document.getElementById('quantityInput').value = 1; // Reset quantity input to 1
-
-      // Update total price initially based on the product's price and quantity
-      updateTotalPrice(productPrice, 1);
-
-      // Show the quantity modal
-      $('#quantityModal').modal('show');
-  }
-
-  function updateTotalPrice(pricePerUnit, quantity) {
-      const totalPrice = quantity * pricePerUnit;
-      document.getElementById('totalPrice').innerText = 'Total Price: $' + totalPrice.toFixed(2);
-  }
-
-  function calculateTotal() {
-      const quantity = parseInt(document.getElementById('quantityInput').value);
-
-      // Retrieve product price from the modal label
-      const modalLabel = document.getElementById('quantityModalLabel').innerText;
-      const productPrice = parseFloat(modalLabel.split('$')[1].trim());
-
-      const totalPrice = quantity * productPrice;
-      alert('Added ' + quantity + ' item(s) to cart. Total Price: $' + totalPrice.toFixed(2));
-      $('#quantityModal').modal('hide');
-  }
-
-  function closeQuantityModal() {
-      $('#quantityModal').modal('hide');
-  }
-</script>
+    let selectedProductName = ''; // Variable to store selected product name
+    let selectedPricePerUnit = 0; // Variable to store selected product price per unit
+  
+    function showQuantity(productName, pricePerUnit) {
+        selectedProductName = productName; // Store selected product name
+        selectedPricePerUnit = pricePerUnit; // Store selected product price per unit
+  
+        document.getElementById('quantityModalLabel').innerText = 'Select Quantity - ' + productName;
+        document.getElementById('quantityInput').value = 1; // Reset quantity input to 1
+        updateTotalPrice(); // Update total price initially
+        $('#quantityModal').modal('show');
+    }
+  
+    function updateTotalPrice() {
+        const quantity = parseInt(document.getElementById('quantityInput').value);
+        const totalPrice = quantity * selectedPricePerUnit;
+        document.getElementById('totalPrice').innerText = 'Total Price: $' + totalPrice.toFixed(2);
+    }
+  
+    function calculateTotal() {
+        const quantity = parseInt(document.getElementById('quantityInput').value);
+        const totalPrice = quantity * selectedPricePerUnit;
+        alert('Added ' + quantity + ' item(s) of ' + selectedProductName + ' to cart. Total Price: $' + totalPrice.toFixed(2));
+        $('#quantityModal').modal('hide');
+        window.open('file:///C:/Users/DELL/OneDrive - Humber College/Computer Programming/Phase-2/Phase-2/checkout.html');
+    }
+  
+    function closeQuantityModal() {
+        $('#quantityModal').modal('hide');
+    }
+  </script>
 
 </body>
 </html>
