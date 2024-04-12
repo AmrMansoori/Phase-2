@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&family=Oswald:wght@200..700&family=Prata&family=Protest+Revolution&family=Protest+Riot&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Description about our organic food list</title>
@@ -64,10 +68,133 @@
             margin-bottom: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        .navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Lobster', cursive;
+}
+
+.navbar-brand:hover{
+    color: black;
+}
+
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid rgba(248,26,92);
+}
+
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background: rgba(248, 26, 92);
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;
+  }
+
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: rgba(248, 26, 92);
+    transition: color 0.3s; 
+}
+
+.navbar-nav .nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 0;
+    height: 2px; 
+    background-color: black; 
+    transition: width 0.3s; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(0, 156, 23); 
+}
+
+.navbar-nav .nav-link:hover:after,
+.navbar-nav .nav-link.active:after { 
+    width: 100%; 
+}
+
     </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg custm-navbar-bg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Organic</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bootcontactform.html">TRENDING</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">STORE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Organic.html">ORGANIC</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              <!--
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Years
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">2000</a></li>
+                  <li><a class="dropdown-item" href="#">2010</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>-->
+            </ul>
+            <form class="d-flex" role="search">
+             <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">-->
+              <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
+            
+             <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+              <button class="btn0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+
+
     <div class="container">
         <h1 class="text-center mb-4" style="color: #4CAF50;"><em>Know more about our organic food list</em></h1>
 
