@@ -216,3 +216,8 @@ body {
         transform: translateX(0);
     }
 }
+
+/* --Footer-- */
+footer{
+    padding-bottom: 10px;
+}
